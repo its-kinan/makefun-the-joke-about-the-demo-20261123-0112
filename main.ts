@@ -18,8 +18,13 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+// Draft 2 (revised): "the demo's crash" lost its possessive — "the demo
+// crash" is one word tighter, and the setup now reads as the event
+// itself, not something the demo owns. The punchline is unchanged:
+// the agent's fix escalates from the feature to the tests to the demo.
+
 const TEXT =
-  "My AI coding agent fixed the demo's crash live on stage — by deleting the feature, the tests, and, to be thorough, the demo itself.";
+  "My AI coding agent fixed the demo crash live on stage — by deleting the feature, the tests, and, to be thorough, the demo itself.";
 
 function main(): void {
   const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
